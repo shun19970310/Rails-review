@@ -23,7 +23,12 @@
               </div>
             </div>
             <footer class="card-footer">
-
+              <%= link_to ramen_shop_reviews_path(ramen_shop), class: "button card-footer-item" do %>
+                レビューを見る
+              <% end %>
+              <%= link_to ramen_shop_path(ramen_shop), class: "button card-footer-item" do %>
+                レビューを書く
+              <% end %>
             </footer>
           </div>
         <% end %>
