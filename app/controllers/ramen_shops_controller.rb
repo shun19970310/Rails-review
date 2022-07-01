@@ -1,4 +1,5 @@
 class RamenShopsController < ApplicationController
+  before_action :authenticate_user!, only: [:show]
   def index
     @ramen_shops = RamenShop.all
   end
